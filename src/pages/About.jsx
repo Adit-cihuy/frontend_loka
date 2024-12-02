@@ -1,6 +1,6 @@
 import Title from "../components/Title";
 import { assets } from "../assets/images/assets";
-import NewsletterBox from "../components/NewsletterBox";
+import NewsLetterBox from "../components/NewsletterBox";
 
 export default function About() {
   return (
@@ -16,20 +16,13 @@ export default function About() {
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Distinctio, qui repellendus! Architecto, officia natus iste eligendi
-            reiciendis voluptatem iusto culpa!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sed
-            aliquid fugit? Voluptate ipsum, quasi voluptatibus consequuntur
-            beatae reiciendis doloribus?
+            LOKAMART
           </p>
           <b className="text-gray-800">Our Misson</b>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            officiis obcaecati saepe repudiandae hic omnis recusandae rem
-            impedit earum libero!
+            bertujuan untuk lebih mengembangkan
+            serta memajukan penjualan produk lokal Indonesia baik di dalam negeri ataupun
+            luar negeri. Produk Lokal Go Digital
           </p>
         </div>
       </div>
@@ -40,31 +33,28 @@ export default function About() {
 
       <div className="flex flex-col md:flex-row text-sm mb-20">
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Quality Assurance:</b>
+          <b>Pengiriman Cepat:</b>
           <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            omnis tempore perferendis, quo sapiente nemo?
+            Kami menyediakan layanan pengiriman cepat dan aman ke seluruh penjuru negeri.
           </p>
         </div>
 
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Convenience:</b>
+          <b>Keamanan Terjamin:</b>
           <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            omnis tempore perferendis, quo sapiente nemo?
+            Jaminan keamanan untuk semua transaksi dan privasi pelanggan.
           </p>
         </div>
 
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Exceptional Customer Service:</b>
+          <b>Garansi Pengembalian:</b>
           <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            omnis tempore perferendis, quo sapiente nemo?
+            Nikmati layanan pengembalian produk dalam 30 hari tanpa syarat.
           </p>
         </div>
       </div>
 
-      <NewsletterBox />
+      <NewsLetterBox />
     </div>
   );
 }

@@ -21,9 +21,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex items-center justify-between py-5 font-medium">
+    <div className="flex items-center justify-between py-5 font-medium ">
       <Link to="/">
-        <img src={assets.logo} className="w-36" alt="" />
+        <img src={assets.logo2} className="w-12" alt="" />
       </Link>
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
@@ -60,7 +60,7 @@ export default function Navbar() {
             className="w-5 cursor-pointer"
           />
           {token && (
-            <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
+            <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-50">
               <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
                 <p className="cursor-pointer hover:text-black">My Profile</p>
                 <p

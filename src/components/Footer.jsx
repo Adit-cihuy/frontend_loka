@@ -5,12 +5,11 @@ export default function Footer() {
     <div>
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt40 text-sm">
         <div>
-          <img src={assets.logo} className="mt-5 w-32" alt="" />
+          <img src={assets.logo2} className="mt-5 w-12" alt="" />
           <p className="w-full md:2/3 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            ipsam animi a expedita eaque eligendi nostrum temporibus aliquam.
-            Dolorum architecto, id ad tenetur facilis placeat rem aliquid enim
-            sit vitae.
+            LOKAMART didirikan pada tahun 2024, bertujuan untuk lebih mengembangkan
+            serta memajukan penjualan produk lokal Indonesia baik di dalam negeri ataupun
+            luar negeri. Produk Lokal Go Digital
           </p>
         </div>
         <div>

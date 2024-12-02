@@ -1,31 +1,28 @@
 import React from "react";
 import { assets } from "../assets/images/assets";
-
+import { Truck, Shield, RefreshCw } from 'lucide-react';
 export default function OurPolicy() {
   return (
     <div className="flex flex-col sm:flex-row justify-around gap-12 text-center p-20 text-xs sm:text-sm md:text-base textga700">
       <div>
-        <img src={assets.exchange_icon} className="w-12 m-auto mb-5" alt="" />
-        <p className="font-semibold">Easy Exchange Policy</p>
+        <Truck className="w-12 m-auto mb-5 size-16" />,
+        <p className="font-semibold">Pengiriman Cepat</p>
         <p className="text-gray-400">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-          doloremque hic rerum.
+          Kami menyediakan layanan pengiriman cepat dan aman ke seluruh penjuru negeri.
         </p>
       </div>
       <div>
-        <img src={assets.quality_icon} className="w-12 m-auto mb-5" alt="" />
-        <p className="font-semibold">7 Days Return Policy</p>
+        <Shield className="w-12 m-auto mb-5 size-16" />,
+        <p className="font-semibold">Keamanan Terjamin</p>
         <p className="text-gray-400">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-          doloremque hic rerum.
+          Jaminan keamanan untuk semua transaksi dan privasi pelanggan.
         </p>
       </div>
       <div>
-        <img src={assets.support_img} className="w-12 m-auto mb-5" alt="" />
-        <p className="font-semibold">Best Customer Support</p>
+        <RefreshCw className="w-12 m-auto mb-5 size-16" />,
+        <p className="font-semibold">Garansi Pengembalian</p>
         <p className="text-gray-400">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-          doloremque hic rerum.
+          Nikmati layanan pengembalian produk dalam 30 hari tanpa syarat.
         </p>
       </div>
     </div>

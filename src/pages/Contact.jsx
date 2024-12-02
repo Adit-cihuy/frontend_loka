@@ -16,7 +16,7 @@ export default function Contact() {
         />
         <div className="flex flex-col justify-center items-start gap-6">
           <p className="font-semibold text-xl text-gray-600">Our Store</p>
-          <p className="text-gray-500">Lorem, ipsum dolor. <br /> Lorem ipsum dolor sit amet, Indonesia</p>
+          <p className="text-gray-500">Jendral Sudirman, Thehok. <br /> Jambi 36138, Indonesia</p>
           <p className="text-gray-500">Telp: (+628) 888 8888 <br /> Email: lokamart@ecommerce.com</p>
           <p className="font-semibold text-xl text-gray-600">Careers at Lokamart</p>
           <p className="text-gray-500">Lorem ipsum dolor sit amet</p>

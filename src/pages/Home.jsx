@@ -1,4 +1,4 @@
-import BestSeller from "../components/BestSeller";
+import Negosasi from "../components/Negosasi";
 import Hero from "../components/Hero";
 import LatestCollection from "../components/LatestCollection";
 import NewsLetterBox from "../components/NewsLetterBox";
@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Hero />
       <LatestCollection />
-      <BestSeller />
+      <Negosasi />
       <OurPolicy />
       <NewsLetterBox />
     </div>
