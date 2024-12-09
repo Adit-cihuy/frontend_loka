@@ -57,10 +57,10 @@ export default function Collection() {
     let fpCopy = filterProducts.slice();
 
     switch (sortType) {
-      case "low-high":
+      case "Rendah-Tinggi":
         setFilterProducts(fpCopy.sort((a, b) => a.price - b.price));
         break;
-      case "high-low":
+      case "Tinggi-Rendah":
         setFilterProducts(fpCopy.sort((a, b) => b.price - a.price));
         break;
       default:
@@ -97,7 +97,7 @@ export default function Collection() {
             setShowFilter ? "" : "hidden"
           } sm:block`}
         >
-          <p className="mb-3 text-sm font-medium">CATEGORIES</p>
+          <p className="mb-3 text-sm font-medium">KATEGORI</p>
           <div className="flex flex-col text-sm font-light text-gray-700">
             <p className="flex gap-2">
               <input
@@ -106,7 +106,7 @@ export default function Collection() {
                 value={"Men"}
                 onChange={toogleCategory}
               />{" "}
-              Men
+              Pria
             </p>
             <p className="flex gap-2">
               <input
@@ -115,7 +115,7 @@ export default function Collection() {
                 value={"Women"}
                 onChange={toogleCategory}
               />{" "}
-              Women
+              Wanita
             </p>
             <p className="flex gap-2">
               <input
@@ -124,7 +124,7 @@ export default function Collection() {
                 value={"Kids"}
                 onChange={toogleCategory}
               />{" "}
-              Kids
+              Anak-anak
             </p>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function Collection() {
             setShowFilter ? "" : "hidden"
           } sm:block`}
         >
-          <p className="mb-3 text-sm font-medium">TYPE</p>
+          <p className="mb-3 text-sm font-medium">TIPE</p>
           <div className="flex flex-col text-sm font-light text-gray-700">
             <p className="flex gap-2">
               <input
@@ -143,7 +143,7 @@ export default function Collection() {
                 value={"Topwear"}
                 onChange={toogleSubCategory}
               />{" "}
-              Topwear
+              Pakaian Atas
             </p>
             <p className="flex gap-2">
               <input
@@ -152,7 +152,7 @@ export default function Collection() {
                 value={"Bottomwear"}
                 onChange={toogleSubCategory}
               />{" "}
-              Bottomwear
+              Pakaian bawah
             </p>
             <p className="flex gap-2">
               <input
@@ -161,7 +161,7 @@ export default function Collection() {
                 value={"Winterwear"}
                 onChange={toogleSubCategory}
               />{" "}
-              Winterwear
+              Pakaian Musim Dingin
             </p>
           </div>
         </div>
@@ -170,14 +170,14 @@ export default function Collection() {
       {/* Right Side */}
       <div className="flex-1">
         <div className="flex items-center justify-between text-base sm:text-2xl mb-4">
-          <Title title="All" subtitle="Collection" />
+          <Title title="Semua" subtitle="Koleksi" />
           <select
             onChange={(e) => setSortType(e.target.value)}
             className="border-2 border-gray-300 text-sm px-2 py-1"
           >
-            <option value="relavent">Sort by relavent</option>
-            <option value="low-high">Sort by Low to High</option>
-            <option value="high-low">Sort by High to Low </option>
+            <option value="relavent">Urutkan berdasarkan relevan</option>
+            <option value="low-high">Urutkan berdasarkan Rendah ke Tinggi</option>
+            <option value="high-low">Urutkan berdasarkan Tinggi ke Rendah </option>
           </select>
         </div>
 

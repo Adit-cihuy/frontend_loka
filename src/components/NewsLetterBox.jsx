@@ -7,11 +7,7 @@ export default function NewsLetterBox() {
   return (
     <div className="text-center">
       <p className="text-2xl font-medium text-gray-800">
-        Subscribe now and get 20% off
-      </p>
-      <p className="text-gray-400 mt-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
-        dolorum!
+        Berlangganan dan dapatkan diskon 20%
       </p>
 
       <form
@@ -21,14 +17,14 @@ export default function NewsLetterBox() {
         <input
           className="w-full flex-1 outline-none"
           type="email"
-          placeholder="Enter your email"
+          placeholder="Masukan Email Anda"
           required
         />
         <button
           type="submit"
           className="bg-black text-white text-xs px-10 py-4"
         >
-          SUBSCRIBE
+          BERLANGGANAN
         </button>
       </form>
     </div>

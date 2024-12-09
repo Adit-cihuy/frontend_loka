@@ -14,7 +14,7 @@ export default function LatestCollection() {
   return (
     <div className="my-10">
       <div className="text-start py-6 text-3xl">
-        <Title title={"Produk"} subtitle={"Produk Pilihan"} />
+        <Title title={"Negosiasi"} subtitle={"Tawarin Pilihanmu"} />
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gapy-6">

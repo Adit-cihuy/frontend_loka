@@ -17,7 +17,7 @@ export default function Verify() {
       }
 
       const response = await axios.post(
-        backendUrl + "/api/order/verify",
+        backendUrl + "/api/order/verifyStripe",
         { success, orderId },
         { headers: { token } }
       );
@@ -29,13 +29,13 @@ export default function Verify() {
         navigate("/cart");
       }
     } catch (error) {
-        console.error(error);
-        toast.error(error.message);        
+      console.error(error);
+      toast.error(error.message);
     }
   };
 
   useEffect(() => {
-    verifyPayment;
+    verifyPayment();
   }, [token]);
 
   return <div>Verify</div>;

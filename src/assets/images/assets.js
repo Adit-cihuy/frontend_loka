@@ -58,8 +58,7 @@ import promo1 from "./promo_1.png";
 import promo2 from "./promo_2.png";
 import promo3 from "./promo_3.png";
 
-import logo from "./logo.png";
-import logo2 from "./logo2.svg";
+import logo from "./lokamart.png";
 import hero_img from "./hero_img.png";
 import cart_icon from "./cart_icon.png";
 import bin_icon from "./bin_icon.png";
@@ -80,7 +79,6 @@ import cross_icon from "./cross_icon.png";
 
 export const assets = {
   logo,
-  logo2,
   hero_img,
   cart_icon,
   dropdown_icon,

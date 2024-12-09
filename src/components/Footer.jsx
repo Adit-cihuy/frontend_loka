@@ -5,7 +5,7 @@ export default function Footer() {
     <div>
       <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt40 text-sm">
         <div>
-          <img src={assets.logo2} className="mt-5 w-12" alt="" />
+          <img src={assets.logo} className="mt-5 w-32" alt="" />
           <p className="w-full md:2/3 text-gray-600">
             LOKAMART didirikan pada tahun 2024, bertujuan untuk lebih mengembangkan
             serta memajukan penjualan produk lokal Indonesia baik di dalam negeri ataupun
@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
+          <p className="text-xl font-medium mb-5">HUBUNGI KAMI</p>
           <ul className="flex flex-col gap-1 text-gray-600">
             <li>+628 1234 5678</li>
             <li>lokamart@ecommerce.com</li>

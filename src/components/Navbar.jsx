@@ -21,26 +21,26 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex items-center justify-between py-5 font-medium ">
+    <div className="flex items-center justify-between py-5 font-medium">
       <Link to="/">
-        <img src={assets.logo2} className="w-12" alt="" />
+        <img src={assets.logo} className="w-20" alt="" />
       </Link>
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
-          <p>HOME</p>
+          <p>BERANDA</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/collection" className="flex flex-col items-center gap-1">
-          <p>COLLECTION</p>
+          <p>KOLEKSI</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/about" className="flex flex-col items-center gap-1">
-          <p>ABOUT</p>
+          <p>TENTANG</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/contact" className="flex flex-col items-center gap-1">
-          <p>CONTACT</p>
+          <p>KONTAK</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
       </ul>
@@ -60,14 +60,13 @@ export default function Navbar() {
             className="w-5 cursor-pointer"
           />
           {token && (
-            <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-50">
+            <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-10">
               <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
-                <p className="cursor-pointer hover:text-black">My Profile</p>
                 <p
                   onClick={() => navigate("/orders")}
                   className="cursor-pointer hover:text-black"
                 >
-                  Orders
+                  Orderan
                 </p>
                 <p onClick={logout} className="cursor-pointer hover:text-black">
                   Logout
@@ -111,28 +110,28 @@ export default function Navbar() {
               onClick={() => setVisible(false)}
               to="/"
             >
-              HOME
+              BERANDA
             </NavLink>
             <NavLink
               className="py-2 pl-6 border"
               onClick={() => setVisible(false)}
               to="/collection"
             >
-              COLLECTION
+              KOLEKSI
             </NavLink>
             <NavLink
               className="py-2 pl-6 border"
               onClick={() => setVisible(false)}
               to="/about"
             >
-              ABOUT
+              TENTANG
             </NavLink>
             <NavLink
               className="py-2 pl-6 border"
               onClick={() => setVisible(false)}
               to="/contact"
             >
-              CONTACT
+              KONTAK
             </NavLink>
           </div>
         </div>

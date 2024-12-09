@@ -73,9 +73,8 @@ export default function Product() {
               {productData.sizes.map((item, index) => (
                 <button
                   onClick={() => setSize(item)}
-                  className={`border py-2 px-4 bg-gray-100 ${
-                    item === size ? "border-orange-500" : ""
-                  }`}
+                  className={`border py-2 px-4 bg-gray-100 ${item === size ? "border-orange-500" : ""
+                    }`}
                   key={index}
                 >
                   {item}
@@ -88,9 +87,9 @@ export default function Product() {
             </button>
             <hr className="mt-8 sm:w-4/5" />
             <div className="text-sm text-gray-500 mt-5 flex flex-col gap-1">
-              <p>100% Original Product.</p>
-              <p>Cash on delivery available on this product.</p>
-              <p>Easy return and exchange available on this product.</p>
+              <p>Produk 100% Asli.</p>
+              <p>Bayar di tempat tersedia untuk produk ini.</p>
+              <p>Pengembalian dan penukaran mudah tersedia untuk produk ini.</p>
             </div>
           </div>
         </div>
@@ -98,8 +97,9 @@ export default function Product() {
       {/* Description */}
       <div className="mt-20">
         <div className="flex">
-          <b className="border px-5 py-3 text-sm">Description</b>
-          <p className="border px-5 py-3 text-sm">Reviews (122)</p>
+          <b className="border px-5 py-3 text-sm">Deskripsi</b>
+          <p className="border px-5 py-3 text-sm">Ulasan (50)</p>
+            
         </div>
         <div className="flex flex-col gap-3 border px-6 py-6 text-sm text-gray-500">
           <p>

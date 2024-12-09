@@ -15,7 +15,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       {/* Container untuk carousel */}
       <div className="overflow-hidden rounded w-full h-fit">
         {/* Wrapper untuk slide */}

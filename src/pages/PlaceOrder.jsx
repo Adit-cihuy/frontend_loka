@@ -16,6 +16,7 @@ export default function PlaceOrder() {
     getCartAmount,
     deliver_fee,
     products,
+    negotiations,
   } = useContext(ShopContext);
 
   const [method, setMethod] = useState("cod");
@@ -42,7 +43,8 @@ export default function PlaceOrder() {
     e.preventDefault();
     try {
       let orderItems = [];
-
+  
+      // Iterasi setiap item di cartItems
       for (const items in cartItems) {
         for (const item in cartItems[items]) {
           if (cartItems[items][item] > 0) {
@@ -52,18 +54,45 @@ export default function PlaceOrder() {
             if (itemInfo) {
               itemInfo.size = item;
               itemInfo.quantity = cartItems[items][item];
+  
+              // Cari apakah ada negosiasi yang diterima untuk item ini
+              const matchedNegotiation = negotiations.find(
+                (neg) => neg.product._id === itemInfo._id && neg.status === "accepted"
+              );
+
+              console.log(matchedNegotiation);
+              
+              
+              // Jika ada, tambahkan informasi negosiasi ke item
+              if (matchedNegotiation) {
+                itemInfo.negotiation = {
+                  status: matchedNegotiation.status,
+                  offeredPrice: matchedNegotiation.offeredPrice,
+                };
+              }
+  
               orderItems.push(itemInfo);
             }
           }
         }
       }
-
+  
+      // Ambil negotiationId yang sesuai
+      let negotiationId = null;
+      orderItems.forEach((item) => {
+        if (item.negotiation && item.negotiation.status === "accepted") {
+          negotiationId = item.negotiation._id;
+        }
+      });
+  
+      // Kirim data order ke BE
       let orderData = {
         address: formData,
         items: orderItems,
         amount: getCartAmount() + deliver_fee,
+        negotiationId: negotiationId,
       };
-
+  
       switch (method) {
         case "cod": {
           const response = await axios.post(
@@ -86,9 +115,9 @@ export default function PlaceOrder() {
               orderData,
               { headers: { token } }
             );
-            console.log(responseStripe.data);
             if (responseStripe.data.success) {
-              const { url } = responseStripe.data;
+              const { paymentIntentId, url } = responseStripe.data;
+              localStorage.setItem("paymentIntentId", paymentIntentId);
               window.location.replace(url);
             } else {
               toast.error(responseStripe.data.message);
@@ -103,6 +132,7 @@ export default function PlaceOrder() {
       toast.error(error.response.data.message);
     }
   };
+  
 
   return (
     <form
@@ -223,18 +253,6 @@ export default function PlaceOrder() {
                 }`}
               ></p>
               <img src={assets.stripe_logo} alt="" className="w-5 mx-4" />
-            </div>
-
-            <div
-              onClick={() => setMethod("razorpay")}
-              className="flex items-center gap-3 border p-2 px-3 cursor-pointer"
-            >
-              <p
-                className={`min-w-3.5 h-3.5 border rounded-full ${
-                  method === "razorpay" ? "bg-green-400" : ""
-                }`}
-              ></p>
-              <img src={assets.razorpay_logo} alt="" className="w-5 mx-4" />
             </div>
 
             <div

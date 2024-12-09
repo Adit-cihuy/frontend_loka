@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
 import { assets } from "../assets/images/assets";
-import CartTotal from "../components/CartTotal";
+import CartTotal from "../components/CartTotal"; // CartTotal tetap ada
 import { toast } from "react-toastify";
 import axios from "axios";
 
@@ -124,7 +124,7 @@ export default function Cart() {
                   <div className="flex items-center gap-5 mt-2">
                     <p>
                       {currency}
-                      {finalPrice}
+                      {/* {finalPrice} */}
                     </p>{" "}
                     {/* Harga yang sudah disesuaikan */}
                     <p className="px-2 sm:px-3 sm:py-1 border bg-slate-50">
@@ -160,7 +160,7 @@ export default function Cart() {
                   }}
                   className="bg-blue-500 text-white text-sm px-4 py-1 rounded"
                 >
-                  Nego
+                  Negotiate
                 </button>
                 <img
                   onClick={() =>
@@ -176,7 +176,8 @@ export default function Cart() {
               </div>
               <div className="text-sm text-gray-600">
                 Total: {currency}
-                {totalPrice.toFixed(2)} {/* Total harga per item */}
+                {/* Total harga per item */}
+                {totalPrice.toFixed(2)}
               </div>
             </div>
           );
@@ -193,7 +194,7 @@ export default function Cart() {
               onClick={() => navigate("/place-order")}
               className="bg-black text-white text-sm my-8 px-8 py-3"
             >
-              LANJUTKAN KE PEMBAYARAN
+              PROCEED TO CHECKOUT
             </button>
           </div>
         </div>
