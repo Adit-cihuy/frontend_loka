@@ -66,7 +66,7 @@ export default function Navbar() {
                   onClick={() => navigate("/orders")}
                   className="cursor-pointer hover:text-black"
                 >
-                  Orderan
+                  Pesanan
                 </p>
                 <p onClick={logout} className="cursor-pointer hover:text-black">
                   Logout

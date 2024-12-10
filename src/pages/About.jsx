@@ -10,41 +10,41 @@ export default function About() {
       </div>
       <div className="my-10 flex flex-col md:flex-row gap-16">
         <img
-          src={assets.about_img}
+          src={assets.kontakloka}
           className="w-full md:max-w-[450px]"
           alt=""
         />
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
+        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-800">
           <p>
-            LOKAMART didirikan pada tahun 2024
+          Lokamart, platform belanja online yang berkomitmen untuk mengangkat dan memperkenalkan produk-produk lokal berkualitas ke seluruh Indonesia. 
+          Dengan berbelanja di Lokamart, Anda turut berkontribusi dalam memajukan usaha kecil dan menengah di Indonesia.
           </p>
-          <b className="text-gray-800">Misi Kami</b>
+          <b className="text-gray-800">Visi & Misi Kami</b>
           <p>
-            bertujuan untuk lebih mengembangkan
-            serta memajukan penjualan produk lokal Indonesia baik di dalam negeri ataupun
-            luar negeri. Produk Lokal Go Digital
+          Menjadi pasar online yang terpercaya untuk produk-produk lokal di Indonesia, 
+          serta menginspirasi masyarakat untuk lebih mencintai dan mengonsumsi produk dalam negeri.
           </p>
         </div>
       </div>
 
       <div className="text-4xl py-4">
-        <Title title={"WHY"} subtitle={"CHOOSE US"} />
+        <Title title={"Kenapa"} subtitle={"Memilih Kami ?"} />
       </div>
 
       <div className="flex flex-col md:flex-row text-sm mb-20">
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Asuransi yang Berkualitas:</b>
+          <b>Tampilan Website Simple dan Nyaman:</b>
           <p className="text-gray-600">
-            Belanja tanpa cemas! Kami menawarkan layanan asuransi berkualitas untuk melindungi pesananmu selama proses pengiriman. 
-            Kalau ada barang hilang, rusak, atau masalah lain saat perjalanan, kamu bisa klaim dengan mudah dan cepat.
+          Tampil dengan desain yang minimalis, UI Website Simple dan Nyaman dirancang untuk memberikan pengalaman pengguna yang intuitif dan bebas ribet. 
+          Fokusnya adalah mempermudah navigasi, sehingga pengguna bisa menemukan apa yang mereka cari dengan cepat dan efisien.
           </p>
         </div>
 
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Nyaman:</b>
+          <b>Negosiasi:</b>
           <p className="text-gray-600">
-          Nikmati pengalaman belanja yang mulus dengan desain antarmuka yang super nyaman! 
-          Kami bikin semuanya simpel dan user-friendly—mulai dari navigasi yang jelas, kategori yang tertata rapi, sampai tombol yang gampang diakses.
+          Fitur Negosiasi hadir untuk mempermudah kamu mendapatkan harga terbaik dengan cara yang fleksibel dan nyaman. 
+          Dengan fitur ini, kamu bisa langsung berinteraksi dengan penjual untuk menyepakati harga yang sesuai, tanpa ribet dan tetap transparan.
           </p>
         </div>
 

@@ -240,7 +240,7 @@ export default function PlaceOrder() {
         </div>
 
         <div className="mt-12">
-          <Title title={"Metode"} subtitle={"Pemayaran"} />
+          <Title title={"Metode"} subtitle={"Pembayaran"} />
           {/* Payment Method */}
           <div className="flex gap-3 flex-col lg:flex-row">
             <div

@@ -75,7 +75,7 @@ export default function Login() {
         onChange={(e) => setEmail(e.target.value)}
         type="email"
         className="w-full px-3 py-2 border border-gray-800"
-        placeholder="Email Address"
+        placeholder="Masukan Email Anda"
         required
       />
       <input
@@ -83,24 +83,24 @@ export default function Login() {
         onChange={(e) => setPassword(e.target.value)}
         type="password"
         className="w-full px-3 py-2 border border-gray-800"
-        placeholder="Password"
+        placeholder="Masukan Password Anda"
         required
       />
       <div className="w-full flex justify-between text-sm mt-[-8px]">
-        <p className="">Forgot your password?</p>
+        <p className="">Lupa Password?</p>
         {currentState === "Login" ? (
           <p
             className="cursor-pointer"
             onClick={() => setCurrentState("Sign Up")}
           >
-            Create Account
+            Buat Akun
           </p>
         ) : (
           <p
             className="cursor-pointer"
             onClick={() => setCurrentState("Login")}
           >
-            Login Here
+            Masuk
           </p>
         )}
       </div>
