@@ -57,7 +57,7 @@ export default function Product() {
             <img src={assets.star_icon} alt="" className="w-3" />
             <img src={assets.star_icon} alt="" className="w-3" />
             <img src={assets.star_dull_icon} alt="" className="w-3" />
-            <p className="pl-2">(122)</p>
+            <p className="pl-2">(132)</p>
           </div>
 
           <p className="mt-5 text-3xl font-medium">
@@ -83,7 +83,7 @@ export default function Product() {
             </div>
 
             <button onClick={() => addToCart(productData._id, size)} className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700">
-              Add To Cart
+              Tambahkan ke Keranjang
             </button>
             <hr className="mt-8 sm:w-4/5" />
             <div className="text-sm text-gray-500 mt-5 flex flex-col gap-1">
@@ -103,13 +103,10 @@ export default function Product() {
         </div>
         <div className="flex flex-col gap-3 border px-6 py-6 text-sm text-gray-500">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-            facilis accusamus assumenda ullam tenetur distinctio labore
-            asperiores minima vitae enim.
+            Barangnay bagus cocok dipakan untuk semua usia, kemudian bahannya berkualitas tinggi,serta nyaman untuk digunakan.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-            eveniet!
+            
           </p>
         </div>
       </div>

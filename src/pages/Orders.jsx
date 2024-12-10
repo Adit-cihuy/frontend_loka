@@ -44,7 +44,7 @@ export default function Orders() {
   return (
     <div className="border-t py-16">
       <div className="text-2xl">
-        <Title title={"MY"} subtitle={"ORDERS"} />
+        <Title title={"Pesanan"} subtitle={"Saya"} />
       </div>
 
       <div>
@@ -79,7 +79,7 @@ export default function Orders() {
                 <p className="text-sm md:text-base">{item.status}</p>
               </div>
               <button onClick={loadOrderData} className="border px-4 py-2 text-sm font-medium rounded-sm">
-                Track Order
+                Lacak Pesanan
               </button>
             </div>
           </div>

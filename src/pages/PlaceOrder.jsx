@@ -141,7 +141,7 @@ export default function PlaceOrder() {
     >
       <div className="flex flex-col gap-4 w-full sm:max-w-[480px]">
         <div className="text-xl sm:text-2xl my-3">
-          <Title title={"DELIVERY"} subtitle={"INFORMATION"} />
+          <Title title={"Informasi"} subtitle={"Pengiriman"} />
         </div>
 
         <div className="flex gap-3">
@@ -151,7 +151,7 @@ export default function PlaceOrder() {
             name="firstName"
             value={formData.firstName}
             type="text"
-            placeholder="First Name"
+            placeholder="Nama Depan"
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           />
           <input
@@ -160,7 +160,7 @@ export default function PlaceOrder() {
             name="lastName"
             value={formData.lastName}
             type="text"
-            placeholder="Last Name"
+            placeholder="Nama Belakang"
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           />
         </div>
@@ -170,7 +170,7 @@ export default function PlaceOrder() {
           name="email"
           value={formData.email}
           type="email"
-          placeholder="Email Address"
+          placeholder="Alamat Email"
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
         />
         <input
@@ -179,7 +179,7 @@ export default function PlaceOrder() {
           name="street"
           value={formData.street}
           type="text"
-          placeholder="Street"
+          placeholder="Nama Jalan"
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
         />
         <div className="flex gap-3">
@@ -189,7 +189,7 @@ export default function PlaceOrder() {
             name="city"
             value={formData.city}
             type="text"
-            placeholder="City"
+            placeholder="Kota"
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           />
           <input
@@ -198,7 +198,7 @@ export default function PlaceOrder() {
             name="state"
             value={formData.state}
             type="text"
-            placeholder="State"
+            placeholder="Kecamatan"
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           />
         </div>
@@ -209,7 +209,7 @@ export default function PlaceOrder() {
             name="zipcode"
             value={formData.zipcode}
             type="number"
-            placeholder="Zipcode"
+            placeholder="Nomor POS"
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           />
           <input
@@ -218,7 +218,7 @@ export default function PlaceOrder() {
             name="country"
             value={formData.country}
             type="text"
-            placeholder="Country"
+            placeholder="Provinsi"
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           />
         </div>
@@ -228,7 +228,7 @@ export default function PlaceOrder() {
           name="phone"
           value={formData.phone}
           type="number"
-          placeholder="Phone Number"
+          placeholder="Nomor Telepon"
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
         />
       </div>
@@ -240,7 +240,7 @@ export default function PlaceOrder() {
         </div>
 
         <div className="mt-12">
-          <Title title={"PAYMENT"} subtitle={"METHOD"} />
+          <Title title={"Metode"} subtitle={"Pemayaran"} />
           {/* Payment Method */}
           <div className="flex gap-3 flex-col lg:flex-row">
             <div
@@ -275,7 +275,7 @@ export default function PlaceOrder() {
               type="submit"
               className="bg-black text-white px-16 py-3 text-sm"
             >
-              PLACE ORDER
+              PESAN 
             </button>
           </div>
         </div>

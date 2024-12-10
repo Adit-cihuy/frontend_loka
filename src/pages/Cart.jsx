@@ -160,7 +160,7 @@ export default function Cart() {
                   }}
                   className="bg-blue-500 text-white text-sm px-4 py-1 rounded"
                 >
-                  Nego
+                  Negosiasi
                 </button>
                 <img
                   onClick={() =>
