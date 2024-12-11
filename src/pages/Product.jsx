@@ -103,7 +103,7 @@ export default function Product() {
         </div>
         <div className="flex flex-col gap-3 border px-6 py-6 text-sm text-gray-500">
           <p>
-            Barangnay bagus cocok dipakan untuk semua usia, kemudian bahannya berkualitas tinggi,serta nyaman untuk digunakan.
+            Barangnya bagus cocok dipakan untuk semua usia, kemudian bahannya berkualitas tinggi,serta nyaman untuk digunakan.
           </p>
           <p>
             
