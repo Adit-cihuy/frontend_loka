@@ -66,7 +66,7 @@ export default function Login() {
           onChange={(e) => setName(e.target.value)}
           type="text"
           className="w-full px-3 py-2 border border-gray-800"
-          placeholder="Name"
+          placeholder="Nama"
           required
         />
       )}
