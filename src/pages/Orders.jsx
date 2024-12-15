@@ -21,6 +21,7 @@ export default function Orders() {
         }
       );
 
+
       if (response.data.success) {
         let allOrdersItem = [];
         response.data.orders.map((order) => {
@@ -49,6 +50,7 @@ export default function Orders() {
 
       <div>
         {orderData.map((item, index) => (
+          
           <div
             key={index}
             className="py-4 border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
@@ -60,7 +62,7 @@ export default function Orders() {
                 <div className="flex items-center gap-3 mt-1 text-base text-gray-700">
                   <p>
                     {currency}
-                    {item.price}
+                    {item.negotiation ? item.negotiation.offeredPrice : item.price}
                   </p>
                   <p>Quantity: {item.quantity}</p>
                   <p>Size: {item.size}</p>
